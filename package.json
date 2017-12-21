@@ -23,6 +23,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "np": "2.18.3"
+    "np": "2.16.1"
   }
 }
