@@ -1,0 +1,22 @@
+{
+  "name": "eslint-plugin-ghost",
+  "version": "0.0.1",
+  "description": "Shared eslint configurations",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Ghost Foundation",
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "devDependencies": {
+    "eslint": "3.9.1"
+  },
+  "engines": {
+    "node": "^4.5.0 || ^6.9.0 || ^8.9.0"
+  },
+  "license": "MIT"
+}
