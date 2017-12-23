@@ -8,7 +8,7 @@
     "eslint-plugin"
   ],
   "scripts": {
-    "publish": "np --yolo --no-yarn"
+    "pub": "np --yolo --no-yarn"
   },
   "author": "Ghost Foundation",
   "main": "lib/index.js",
