@@ -8,7 +8,7 @@
     "eslint-plugin"
   ],
   "scripts": {
-    "publish": "np --yolo"
+    "publish": "np --yolo --no-yarn"
   },
   "author": "Ghost Foundation",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "eslint": "3.9.1",
-    "np": "2.17.0"
+    "np": "2.16.1"
   },
   "engines": {
     "node": "^4.5.0 || ^6.9.0 || ^8.9.0"
