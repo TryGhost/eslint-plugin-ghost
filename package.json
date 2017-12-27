@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ghost",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Shared eslint configurations",
   "keywords": [
     "eslint",
