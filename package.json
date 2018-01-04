@@ -8,8 +8,7 @@
     "eslint-plugin"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js --cache",
-    "pub": "np --yolo --no-yarn"
+    "lint": "eslint . --ext .js --cache"
   },
   "author": "Ghost Foundation",
   "main": "lib/index.js",
