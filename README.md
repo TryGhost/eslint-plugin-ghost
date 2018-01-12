@@ -42,7 +42,7 @@ some incompatibilities between np and yarn.
 
 To publish this package, run:
 
-`np --yolo --no-yarn`
+`./node_modules/.bin/np --yolo --no-yarn`
 
 You may have to run `git push --follow-tags` afterwards to complete the publish.
 
