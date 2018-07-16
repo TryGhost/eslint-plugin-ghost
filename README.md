@@ -37,17 +37,7 @@ module.exports = {
 
 ## Publishing
 
-The script for publishing is disabled, as we're currently battling against
-some incompatibilities between np and yarn.
-
-To publish this package, run:
-
-`./node_modules/.bin/np --yolo --no-yarn`
-
-You may have to run `git push --follow-tags` afterwards to complete the publish.
-
-This is terrible, and totally on my radar to fix: https://github.com/sindresorhus/np/pull/220
-
+ - `yarn ship`	 - `yarn ship`
 
 # Copyright & License
 
