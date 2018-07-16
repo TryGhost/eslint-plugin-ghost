@@ -8,7 +8,9 @@
     "eslint-plugin"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js --cache"
+    "lint": "eslint . --ext .js --cache",
+    "preship": "yarn lint",
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push --follow-tags; fi"
   },
   "author": "Ghost Foundation",
   "main": "lib/index.js",
@@ -16,8 +18,7 @@
     "eslint": ">=0.8.0"
   },
   "devDependencies": {
-    "eslint": "4.14.0",
-    "np": "2.18.3"
+    "eslint": "4.14.0"
   },
   "license": "MIT",
   "dependencies": {
