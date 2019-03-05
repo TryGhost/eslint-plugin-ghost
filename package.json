@@ -23,6 +23,6 @@
   "license": "MIT",
   "dependencies": {
     "eslint-plugin-ember": "^6.2.0",
-    "eslint-plugin-sort-imports-es6-autofix": "0.2.2"
+    "eslint-plugin-sort-imports-es6-autofix": "0.4.0"
   }
 }
