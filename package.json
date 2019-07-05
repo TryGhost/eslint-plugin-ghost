@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint . --ext .js --cache",
     "preship": "yarn lint",
-    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push --follow-tags; fi"
+    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} master --follow-tags; fi"
   },
   "author": "Ghost Foundation",
   "main": "lib/index.js",
