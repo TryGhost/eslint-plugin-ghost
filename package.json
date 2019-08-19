@@ -23,6 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "eslint-plugin-ember": "^6.7.0",
+    "eslint-plugin-mocha": "^6.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "0.4.0"
   }
 }
