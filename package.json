@@ -15,15 +15,15 @@
   "author": "Ghost Foundation",
   "main": "lib/index.js",
   "peerDependencies": {
-    "eslint": ">=0.8.0"
+    "eslint": ">=5.11.0"
   },
   "devDependencies": {
-    "eslint": "5.15.1"
+    "eslint": "6.5.1"
   },
   "license": "MIT",
   "dependencies": {
-    "eslint-plugin-ember": "^6.7.0",
-    "eslint-plugin-mocha": "^6.0.0",
-    "eslint-plugin-sort-imports-es6-autofix": "0.4.0"
+    "eslint-plugin-ember": "7.2.0",
+    "eslint-plugin-mocha": "6.2.0",
+    "eslint-plugin-sort-imports-es6-autofix": "0.5.0"
   }
 }
