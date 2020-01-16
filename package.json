@@ -2,6 +2,12 @@
   "name": "eslint-plugin-ghost",
   "version": "0.6.0",
   "description": "Shared eslint configurations",
+  "author": "Ghost Foundation",
+  "homepage": "https://github.com/TryGhost/eslint-plugin-ghost",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TryGhost/eslint-plugin-ghost.git"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -12,7 +18,6 @@
     "preship": "yarn lint",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} master --follow-tags; fi"
   },
-  "author": "Ghost Foundation",
   "main": "lib/index.js",
   "peerDependencies": {
     "eslint": ">=5.11.0"
