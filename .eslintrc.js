@@ -1,3 +1,4 @@
 module.exports = {
-    extends: require.resolve('./lib/config/node')
+    plugins: ['self'],
+    extends: 'plugin:self/node'
 };

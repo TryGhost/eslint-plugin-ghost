@@ -563,6 +563,11 @@ eslint-plugin-node@11.1.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
+eslint-plugin-self@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-self/-/eslint-plugin-self-1.2.1.tgz#7f1ac269f3a230c86ca308fea3349d67bce1ffe5"
+  integrity sha512-S/9vZbF2Zm3EZWeyaaCOI4idFLrT9t4cVZ7bnrgb4FWcLpNssDC5LFylgxfAb4Pm3aFubFurCZDi6nHkyP+TgQ==
+
 eslint-plugin-sort-imports-es6-autofix@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-sort-imports-es6-autofix/-/eslint-plugin-sort-imports-es6-autofix-0.5.0.tgz#dabae09a457eac6e95c52d8edd7855f576d014b6"
