@@ -2,5 +2,5 @@
   "extends": [
     "@tryghost:quietJS"
   ],
-  "ignoreDeps": ["eslint-plugin-mocha"]
+  "ignoreDeps": ["eslint-plugin-mocha", "eslint-plugin-unicorn"]
 }
