@@ -15,7 +15,9 @@
   ],
   "scripts": {
     "lint": "eslint . --ext .js --cache",
-    "preship": "yarn lint",
+    "test": "node --test test",
+    "posttest": "yarn lint",
+    "preship": "yarn test",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} main --follow-tags; fi"
   },
   "main": "lib/index.js",
