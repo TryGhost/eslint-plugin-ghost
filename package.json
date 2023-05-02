@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ghost",
-  "version": "2.16.0",
+  "version": "2.17.0",
   "description": "Shared eslint configurations",
   "author": "Ghost Foundation",
   "homepage": "https://github.com/TryGhost/eslint-plugin-ghost",
