@@ -32,7 +32,7 @@
   "dependencies": {
     "@kapouer/eslint-plugin-no-return-in-loop": "1.0.0",
     "eslint-plugin-ember": "11.5.2",
-    "eslint-plugin-filenames": "allouis/eslint-plugin-filenames",
+    "eslint-plugin-filenames": "allouis/eslint-plugin-filenames#7fd1bb376ab9dadf47cb99ec0b24424ad5cb4a87",
     "eslint-plugin-mocha": "7.0.1",
     "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
