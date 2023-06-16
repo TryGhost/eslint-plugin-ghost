@@ -14,7 +14,9 @@
     "eslint-plugin"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js --cache",
+    "lint:code": "eslint *.js lib/ --ext .js --cache",
+    "lint": "yarn lint:code && yarn lint:test",
+    "lint:test": "eslint -c test/.eslintrc.js test/ --ext .js --cache",
     "test": "node --test test",
     "posttest": "yarn lint",
     "preship": "yarn test",
