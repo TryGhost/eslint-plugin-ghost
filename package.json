@@ -35,7 +35,7 @@
     "@kapouer/eslint-plugin-no-return-in-loop": "1.0.0",
     "@typescript-eslint/eslint-plugin": "6.4.1",
     "@typescript-eslint/parser": "6.4.1",
-    "eslint-plugin-ember": "11.11.0",
+    "eslint-plugin-ember": "11.11.1",
     "eslint-plugin-filenames": "allouis/eslint-plugin-filenames#15dc354f4e3d155fc2d6ae082dbfc26377539a18",
     "eslint-plugin-mocha": "7.0.1",
     "eslint-plugin-n": "16.0.2",
