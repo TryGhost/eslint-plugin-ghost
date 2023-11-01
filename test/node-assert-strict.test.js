@@ -18,6 +18,9 @@ ruleTester.run('node-assert-strict', nodeAssertStrict, {
         },
         {
             code: 'function test() { const assert = require("assert/strict"); }'
+        },
+        {
+            code: 'import assert from "assert/strict";'
         }
     ],
     invalid: [
@@ -27,6 +30,10 @@ ruleTester.run('node-assert-strict', nodeAssertStrict, {
         },
         {
             code: 'function test() { const assert = require("assert"); }',
+            errors: [{messageId: 'forceStrict'}]
+        },
+        {
+            code: 'import assert from "assert";',
             errors: [{messageId: 'forceStrict'}]
         }
     ]
