@@ -27,7 +27,7 @@
     "eslint": ">=5.11.0"
   },
   "devDependencies": {
-    "eslint": "8.55.0",
+    "eslint": "8.56.0",
     "eslint-plugin-self": "1.2.1"
   },
   "license": "MIT",
