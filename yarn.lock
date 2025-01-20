@@ -415,9 +415,9 @@ dot-case@^3.0.4:
     tslib "^2.0.3"
 
 ember-eslint-parser@^0.5.6:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.5.7.tgz#ec6467ebdab0199d4a93eb1a1574b83cbaabeccd"
-  integrity sha512-d0nIQxC6TXsMebi7GcpH6meFDVhTUTYZpQ6Yg5n92+eZHqygAEKWZX55lLa49/wucBXS+Wadp2g6okPcN463aA==
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.5.8.tgz#a37776e0a6d23d2d40fd8d49975697625d301bb9"
+  integrity sha512-THbt/XCE2twgfG6GXNFOU6oHrsPTPc3fQ4DvHhtj/8u6s2pAYexiZt0RWQhhCiBTQT1kNrNoKbiq/9O7U61yNA==
   dependencies:
     "@babel/eslint-parser" "^7.23.10"
     "@glimmer/syntax" "^0.92.0"
@@ -1367,9 +1367,9 @@ spdx-expression-parse@^3.0.0:
     spdx-license-ids "^3.0.0"
 
 spdx-license-ids@^3.0.0:
-  version "3.0.20"
-  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.20.tgz#e44ed19ed318dd1e5888f93325cee800f0f51b89"
-  integrity sha512-jg25NiDV/1fLtSgEgyvVyDunvaNHbuwF9lfNV17gSmPFAlYzdfNBlLtLzXTevwkPj7DhGbmN9VnmJIgLnhvaBw==
+  version "3.0.21"
+  resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.21.tgz#6d6e980c9df2b6fc905343a3b2d702a6239536c3"
+  integrity sha512-Bvg/8F5XephndSK3JffaRqdT+gyhfqIPwDHpX80tJrF8QQRYMo8sNMeaZ2Dp5+jhwKnUmIOyFFQfHRkjJm5nXg==
 
 strip-ansi@^6.0.1:
   version "6.0.1"
