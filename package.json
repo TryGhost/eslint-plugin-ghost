@@ -33,8 +33,8 @@
   "license": "MIT",
   "dependencies": {
     "@kapouer/eslint-plugin-no-return-in-loop": "1.0.0",
-    "@typescript-eslint/eslint-plugin": "8.32.0",
-    "@typescript-eslint/parser": "8.32.0",
+    "@typescript-eslint/eslint-plugin": "8.32.1",
+    "@typescript-eslint/parser": "8.32.1",
     "eslint-plugin-ember": "12.5.0",
     "eslint-plugin-filenames": "allouis/eslint-plugin-filenames#15dc354f4e3d155fc2d6ae082dbfc26377539a18",
     "eslint-plugin-mocha": "7.0.1",
