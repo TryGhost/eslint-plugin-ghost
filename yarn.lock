@@ -96,9 +96,9 @@
     "@glimmer/interfaces" "0.94.6"
 
 "@handlebars/parser@~2.2.0":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@handlebars/parser/-/parser-2.2.1.tgz#ce95a3b2c6586a4358341b44ef6b8aad881d1b78"
-  integrity sha512-D76vKOZFEGA9v6g0rZTYTQDUXNopCblW1Zeas3EEVrbdeh8gWrCEO9/goocKmcgtqAwv1Md76p58UQp7HeFTEw==
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@handlebars/parser/-/parser-2.2.2.tgz#f33395c3f0e66e791bc820b2b7ff13d9d0dc0491"
+  integrity sha512-n/SZW+12rwikx/f8YcSv9JCi5p9vn1Bnts9ZtVvfErG4h0gbjHI1H1ZMhVUnaOC7yzFc6PtsCKIK8XeTnL90Gw==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.14"
