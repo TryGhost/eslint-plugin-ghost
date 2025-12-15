@@ -1,8 +1,14 @@
 const assert = require('node:assert/strict');
 const {test} = require('node:test');
 const {getPrefixedPluginRules} = require('../lib/plugins');
+const filenamesPackage = require('eslint-plugin-filenames-ts/package.json');
 
 const rules = getPrefixedPluginRules();
+
+test('eslint-plugin-filenames-ts version check', function () {
+    assert.equal(filenamesPackage.version, '1.3.2',
+        'eslint-plugin-filenames-ts version changed - verify schemas in lib/plugins.js are still correct or if the plugin now provides its own');
+});
 
 test('filenames/match-regex should be an object-style rule with schema', function () {
     const rule = rules['filenames/match-regex'];
