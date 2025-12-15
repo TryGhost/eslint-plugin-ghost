@@ -17,7 +17,7 @@
     "lint:code": "eslint *.js lib/ --ext .js --cache",
     "lint": "yarn lint:code && yarn lint:test",
     "lint:test": "eslint -c test/.eslintrc.js test/ --ext .js --cache",
-    "test": "node --test test",
+    "test": "node --test 'test/*.test.js'",
     "posttest": "yarn lint",
     "preship": "yarn test",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} main --follow-tags; fi"
