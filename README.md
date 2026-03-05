@@ -32,6 +32,15 @@ module.exports = {
 };
 ```
 - Change `[config]` to be E.g. node, browser, test etc depending on what environment you are linting
+- If you want style rules disabled, use the `-no-style` presets instead:
+  - `browser-no-style`
+  - `ember-no-style`
+  - `node-no-style`
+  - `es-no-style`
+  - `ts-no-style`
+  - `filenames-no-style`
+  - `test-no-style`
+  - `ts-test-no-style`
 - If you have a test folder, browser JS, etc, you can add multiple `.eslintrc.js` files, nesting them inside the folder they belong to.
 
 
