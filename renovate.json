@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@tryghost:quietJS"
+    "github>TryGhost/renovate-config"
   ],
   "ignoreDeps": ["eslint-plugin-mocha", "eslint-plugin-unicorn"]
 }
