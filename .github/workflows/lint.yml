@@ -7,4 +7,4 @@ on:
       - 'renovate/*'
 jobs:
   test:
-    uses: tryghost/actions/.github/workflows/lint-only.yml@0607e4b19217c375b376d7af0110ca6a851be288 # main
+    uses: tryghost/actions/.github/workflows/lint-only.yml@2eaff8db960655334661c350f557b8d798ec8d27 # main
