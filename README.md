@@ -11,11 +11,12 @@ rules you add come with an explanation!
 ## Basic setup
 1. Make sure that `gstenv` is green. See our [Dev Environment](https://github.com/TryGhost/Team/blob/master/Engineering/Dev%20Environment.md) docs.
 2. `git clone` this repo & `cd` into it as usual
-3. Run `yarn install` to install dependencies.
+3. Run `pnpm install` to install dependencies.
 
 ## Testing
 
-Run `yarn link` inside of me, and then run `yarn link eslint-plugin-ghost`
+Run `pnpm link --global` inside of me, and then run
+`pnpm link --global eslint-plugin-ghost`
 inside of the project you want to lint.
 
 ## Usage
@@ -46,7 +47,8 @@ module.exports = {
 
 ## Publishing
 
- - `yarn ship`	 - `yarn ship`
+- `pnpm ship` — choose a version interactively, publish it, and push the release commit and tag.
+- `pnpm ship patch` — publish a specified release type (`patch`, `minor`, or `major`) non-interactively.
 
 # Copyright & License
 
