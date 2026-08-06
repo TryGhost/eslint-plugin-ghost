@@ -1,6 +1,7 @@
 {
   "name": "eslint-plugin-ghost",
   "version": "3.5.0",
+  "packageManager": "pnpm@11.19.0",
   "description": "Shared eslint configurations",
   "author": "Ghost Foundation",
   "homepage": "https://github.com/TryGhost/eslint-plugin-ghost",
@@ -15,18 +16,19 @@
   ],
   "scripts": {
     "lint:code": "eslint *.js lib/ --ext .js --cache",
-    "lint": "yarn lint:code && yarn lint:test",
+    "lint": "pnpm lint:code && pnpm lint:test",
     "lint:test": "eslint -c test/.eslintrc.js test/ --ext .js --cache",
     "test": "node --test 'test/*.test.js'",
-    "posttest": "yarn lint",
-    "preship": "yarn test",
-    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} main --follow-tags; fi"
+    "posttest": "pnpm lint",
+    "preship": "pnpm test",
+    "ship": "pro-ship --publish"
   },
   "main": "lib/index.js",
   "peerDependencies": {
     "eslint": ">=5.11.0"
   },
   "devDependencies": {
+    "@tryghost/pro-ship": "1.1.7",
     "eslint": "8.57.1",
     "eslint-plugin-self": "1.2.1"
   },
