@@ -18,7 +18,7 @@
     "lint:code": "eslint *.js lib/ --ext .js --cache",
     "lint": "pnpm lint:code && pnpm lint:test",
     "lint:test": "eslint -c test/.eslintrc.js test/ --ext .js --cache",
-    "test": "node --test test/filenames-schema.test.js test/ghost-error-usage.test.js test/ghost-tpl-usage.test.js test/no-native-error.test.js test/no-style-configs.test.js test/node-assert-methods.test.js test/node-assert-params.test.js test/node-assert-strict.test.js",
+    "test": "node --test test/*.test.js",
     "posttest": "pnpm lint",
     "preship": "pnpm test",
     "ship": "pro-ship --publish"
