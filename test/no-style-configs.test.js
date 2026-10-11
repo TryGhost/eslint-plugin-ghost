@@ -6,7 +6,6 @@ const noStyleRules = require('../lib/config/no-style-rules');
 
 const noStyleConfigNames = [
     ['browser-no-style', 'browser'],
-    ['ember-no-style', 'ember'],
     ['node-no-style', 'node'],
     ['es-no-style', 'es'],
     ['ts-no-style', 'ts'],

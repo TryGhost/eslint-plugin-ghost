@@ -34,7 +34,6 @@ module.exports = {
 - Change `[config]` to be E.g. node, browser, test etc depending on what environment you are linting
 - If you want style rules disabled, use the `-no-style` presets instead:
   - `browser-no-style`
-  - `ember-no-style`
   - `node-no-style`
   - `es-no-style`
   - `ts-no-style`
@@ -42,6 +41,7 @@ module.exports = {
   - `test-no-style`
   - `ts-test-no-style`
 - If you have a test folder, browser JS, etc, you can add multiple `.eslintrc.js` files, nesting them inside the folder they belong to.
+- The `ts` and `ts-test` configs (and their `-no-style` presets) need `typescript`, `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin` installed in your project. The other configs don't.
 
 
 ## Publishing
