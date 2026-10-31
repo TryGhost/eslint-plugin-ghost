@@ -1,0 +1,7 @@
+minimumReleaseAge: 4320
+strictDepBuilds: true
+blockExoticSubdeps: true
+
+# eslint-plugin-self loads this package via ../.. and therefore requires the
+# flat node_modules layout used by Yarn Classic.
+nodeLinker: hoisted
