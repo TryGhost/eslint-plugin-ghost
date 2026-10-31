@@ -15,9 +15,8 @@ rules you add come with an explanation!
 
 ## Testing
 
-Run `pnpm link --global` inside of me, and then run
-`pnpm link --global eslint-plugin-ghost`
-inside of the project you want to lint.
+From the project you want to lint, run `pnpm link ../eslint-plugin-ghost`
+(adjust the path to your local checkout).
 
 ## Usage
 
@@ -35,7 +34,6 @@ module.exports = {
 - Change `[config]` to be E.g. node, browser, test etc depending on what environment you are linting
 - If you want style rules disabled, use the `-no-style` presets instead:
   - `browser-no-style`
-  - `ember-no-style`
   - `node-no-style`
   - `es-no-style`
   - `ts-no-style`
@@ -43,6 +41,7 @@ module.exports = {
   - `test-no-style`
   - `ts-test-no-style`
 - If you have a test folder, browser JS, etc, you can add multiple `.eslintrc.js` files, nesting them inside the folder they belong to.
+- The `ts` and `ts-test` configs (and their `-no-style` presets) need `typescript`, `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin` installed in your project. The other configs don't.
 
 
 ## Publishing

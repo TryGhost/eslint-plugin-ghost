@@ -2,5 +2,5 @@
   "extends": [
     "github>TryGhost/renovate-config"
   ],
-  "ignoreDeps": ["eslint-plugin-mocha", "eslint-plugin-unicorn"]
+  "ignoreDeps": ["eslint-plugin-mocha"]
 }
