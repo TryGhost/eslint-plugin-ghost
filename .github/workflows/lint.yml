@@ -5,6 +5,35 @@ on:
     branches:
       - main
       - 'renovate/*'
+
+permissions:
+  contents: read
+
 jobs:
   test:
-    uses: tryghost/actions/.github/workflows/lint-only.yml@6995fe6ab519addafbb9a98983c10356c5c53bc8 # main
+    name: Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && !(startsWith(github.head_ref, 'renovate/') && github.event.pull_request.head.repo.full_name == github.repository))
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+    env:
+      FORCE_COLOR: 1
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        env:
+          FORCE_COLOR: 0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test

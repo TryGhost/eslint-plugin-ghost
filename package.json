@@ -15,12 +15,12 @@
   ],
   "scripts": {
     "lint:code": "eslint *.js lib/ --ext .js --cache",
-    "lint": "yarn lint:code && yarn lint:test",
+    "lint": "pnpm lint:code && pnpm lint:test",
     "lint:test": "eslint -c test/.eslintrc.js test/ --ext .js --cache",
-    "test": "node --test 'test/*.test.js'",
-    "posttest": "yarn lint",
-    "preship": "yarn test",
-    "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push ${GHOST_UPSTREAM:-upstream} main --follow-tags; fi"
+    "test": "node --test test/*.test.js",
+    "posttest": "pnpm lint",
+    "preship": "pnpm test",
+    "ship": "pro-ship --publish"
   },
   "main": "lib/index.js",
   "peerDependencies": {
@@ -42,7 +42,8 @@
   },
   "devDependencies": {
     "eslint": "8.57.1",
-    "eslint-plugin-self": "1.2.1"
+    "eslint-plugin-self": "1.2.1",
+    "@tryghost/pro-ship": "1.1.7"
   },
   "license": "MIT",
   "dependencies": {
@@ -51,5 +52,6 @@
     "eslint-plugin-mocha": "7.0.1",
     "eslint-plugin-n": "18.5.0",
     "eslint-plugin-sort-imports-es6-autofix": "0.6.0"
-  }
+  },
+  "packageManager": "pnpm@12.16.1+sha512.091d1dee7927575661b25dab3c2ae31cafc1c54d6b71ed6a6600cf0c1cb10434a447eae14015f1b23e2e6bedeed79df94a932e2164d2832280dce3fb32f656d1"
 }
