@@ -43,7 +43,7 @@
   "devDependencies": {
     "eslint": "8.57.1",
     "eslint-plugin-self": "1.2.1",
-    "@tryghost/pro-ship": "1.1.7"
+    "@tryghost/pro-ship": "1.1.9"
   },
   "license": "MIT",
   "dependencies": {
