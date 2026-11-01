@@ -41,7 +41,7 @@
     }
   },
   "devDependencies": {
-    "eslint": "8.57.1",
+    "eslint": "10.13.0",
     "eslint-plugin-self": "1.2.1",
     "@tryghost/pro-ship": "1.1.9"
   },
