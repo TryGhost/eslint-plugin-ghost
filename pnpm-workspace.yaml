@@ -9,4 +9,4 @@ nodeLinker: hoisted
 # typescript-estree only calls minimatch(), which the patched major still supports.
 # Remove once @typescript-eslint requires minimatch 11.
 overrides:
-  'minimatch@10': 11.0.5
+  'minimatch@10': 11.0.8
